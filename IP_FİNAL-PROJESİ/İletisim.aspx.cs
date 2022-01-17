@@ -19,7 +19,7 @@ namespace IP_FİNAL_PROJESİ
         protected void btnİletisimGonder_Click(object sender, EventArgs e)
         {
             if (txtİletisimAd.Text == "" || txtİletisimEposta.Text == "" || txtİletisimBaslik.Text == "" || txtİletisimSorun.Text == "")
-                lblİletisimBilgi.Text = "Lütfen Alanları Doldurunuz";
+                lblİletisimBilgi.Text = "Lütfen Alanları Doldurunuz!";
             else
             {
                 DataSet1TableAdapters.TBLİLETİSİMTableAdapter dt = new DataSet1TableAdapters.TBLİLETİSİMTableAdapter();
