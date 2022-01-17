@@ -1,0 +1,177 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AnaSablon.master.cs" Inherits="IP_FİNAL_PROJESİ.AnaSablon" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="Cat Club Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="web/application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+
+    <script src="web/js/bootstrap.js"></script>
+    <script src="web/js/easing.js"></script>
+    <script src="web/js/jquery-1.11.1.min.js"></script>
+    <script src="web/js/lightbox-plus-jquery.min.js"></script>
+    <script src="web/js/move-top.js"></script>
+    <script src="web/js/responsiveslides.min.js"></script>
+    <script src="web/js/SmoothScroll.min.js"></script>
+
+<link href="web/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+
+
+
+<link rel="stylesheet" href="web/css/style.css" type="text/css" media="all" />
+
+<link href="web/css/font-awesome.css" rel="stylesheet"> 
+
+<link href='//fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
+
+<script src="web/js/jquery-1.11.1.min.js"></script>
+<script src="web/js/bootstrap.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+				<div class="header-left">
+					<div class="w3layouts-logo">
+						<h1>
+							<a href="Default.aspx">VET<span>CITY</span></a>
+						</h1>
+					</div>
+				</div>
+				<div class="header-right">
+					<div class="top-nav">
+						<nav class="navbar navbar-default">
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+							
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav">
+									<li><a id="liAnasayfa" runat="server" href="Default.aspx">Anasayfa</a></li>
+									<li><a href="FotoGaleri.aspx">FotoGaleri</a></li>
+									<li><a href="İletisim.aspx">Bize Ulaşın</a></li>
+									<li><a class="active" href="RandevuAl.aspx">Hızlı Randevu</a></li>
+									<asp:Label ID="txtAnasablonBilgi" runat="server"></asp:Label>
+									<li id="liGiris" runat="server" class=""><a id="" href="#" class="dropdown-toggle hvr-bounce-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Giriş yap<span class="caret"></span></a>
+										<ul class="dropdown-menu">
+											<li><a class="hvr-bounce-to-bottom" href="KayitOlma.aspx">Kayıt ol</a></li>
+											<li><a class="hvr-bounce-to-bottom" href="Giris.aspx">Giriş Yap</a></li>
+										</ul>
+									</li>
+								</ul>	
+								<div class="clearfix"> </div>
+							</div>	
+						</nav>		
+					</div>
+					<div class="agileinfo-social-grids">
+						<ul>
+							<asp:Button ID="btnAnasablonCikis" class="btn btn-warning" runat="server" Text="Çıkış Yap" OnClick="btnAnasablonCikis_Click" />
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		
+	
+	
+	
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+		
+	<footer>
+		<div class="container">
+			<div class="agileits-w3layouts-footer-grids">
+				<div class="col-md-4 footer-left">
+					<h3>
+						<a href="Default.aspx">VET <span>CITY</span></a>
+					</h3>
+					<div class="footer-social-grids">
+						<ul>
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-rss"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4 footer-left">
+					<h4>Hızlı Bul</h4>
+					<div class="col-md-6 footer-grid-left">
+						<ul>
+							<li><a class="active" href="Default.aspx">Anasayfa</a></li>
+							<li><a href="FotoGaleri.aspx">FotoGaleri</a></li>								
+							<li><a href="gallery.html">Hızlı Randevu</a></li>
+							<li><a href="İletisim.aspx">Bize Ulaş</a></li>
+							
+						</ul>
+					</div>
+					<div class="col-md-6 footer-grid-left">
+					
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-4 footer-left">
+					<h4>Yeniliklerden Haberdar Ol</h4>
+					<p>Bizi Takip Et</p>
+					
+					<asp:TextBox ID="txtAnasablonEposta" placeholder="Eposta Giriniz" runat="server"></asp:TextBox>
+					<asp:Button ID="btnAnasablonGonder"  runat="server" Text="Gönder" />
+					
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</footer>
+	
+	<div class="copyright">
+		<div class="container">
+			<p>© 2021 VET_CITY. Bütün Hakları Saklıdır | Salih Uzuev </p>
+		</div>
+	</div>
+
+	
+	<script src="js/SmoothScroll.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+	
+	<script type="text/javascript">
+        $(document).ready(function () {
+           
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
+    </script>
+
+
+    </form>
+</body>
+</html>
